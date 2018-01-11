@@ -6,7 +6,7 @@ public class StudentInject {
 	public Student getStudent() {
 		return student;
 	}
-
+	public StudentInject() {}
 	public StudentInject(Student student) {
 		this.student = student;
 	}

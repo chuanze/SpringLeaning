@@ -10,6 +10,14 @@ public class Student implements People {
 		this.name = name;
 		this.age = age;
 	}
+	public Student(int age,String name) {
+		this.age=age;
+		this.name=name;
+	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + "]";
+	}
 	public String getName() {
 		return name;
 	}

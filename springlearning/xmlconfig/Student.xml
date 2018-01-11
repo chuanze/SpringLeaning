@@ -10,4 +10,15 @@
 			<bean class="chuanze.springlearning.people.Student"></bean>
 		</constructor-arg>
 	</bean>
+	<bean id="StudentInjectPro" class="chuanze.springlearning.people.StudentInject">
+		<property name="student" ref="Student"></property>
+	</bean>
+	<bean id="StudentImpl" class="chuanze.springlearning.people.Student">
+		<constructor-arg type="java.lang.String">
+			<value>18</value>
+		</constructor-arg>
+		<constructor-arg type="int">
+			<value>100</value>
+		</constructor-arg>
+	</bean>
 </beans>
